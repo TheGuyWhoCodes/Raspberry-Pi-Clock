@@ -3,8 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Raspberry Pi Clock</title>
+    <link rel = "stylesheet" href = "css/style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
   <body>
+    <div class = "date" id = "date">
+      <div style="display:table;">
+        <div style="display:table-cell;vertical-align:middle;">
+          <div style = "text-align:center" id = "time"></div>
+    </div>
+  </div>
+</div>
+<ul class = "server-list" data-bind="foreach:servers" style = "list-style-type:none;">
+    <li> <a href="#" data-bind="text:name,attr:{href: 'http://'+name}">tester</a> <span data-bind="text:status,css:status"></span>
+
+    </li>
+</ul>
+<div class = "spotify-playing">
+  <button class="btn btn-primary" id="btn-login">Login</button>
+
+</div>
+    <script src = "node_modules\knockout\build\output\knockout-latest.js"></script>
     <script src = "js/ping.js"></script>
+    <script src = "js/spotify.js"></script>
+    <script src = "js/date.js"></script>
   </body>
 </html>

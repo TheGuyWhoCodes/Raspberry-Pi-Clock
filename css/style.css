@@ -1,0 +1,33 @@
+body{
+  background-color: #333333;
+  color:white;
+}
+.date{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Open Sans', sans-serif;
+  font-size:150px;
+}
+.responded {
+    color:green;
+}
+.checking,.unchecked {
+    color:#FF8C00;
+}
+.timeout {
+    color:red;
+}
+a:visited{
+  color:blue;
+}
+.server-list{
+  position:absolute;
+  bottom:0;
+  right:0;
+  margin:1em;
+}
+.spotify-playing{
+  position: absolute;
+  bottom:0;
+}
