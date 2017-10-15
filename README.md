@@ -5,7 +5,7 @@
  - Run:
 `node index.js`
 
-##Capabilities
+## Capabilities
  * Able to Monitor Now-Playing on Spotify
  * Able to ping local servers to check up time
  * Able to display time
